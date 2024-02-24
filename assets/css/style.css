@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.expense-section {
+    background-color: #e7e7e7;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.expense-section .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.expense-section .balance-box h4 {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+} 
+
+.expense-section .balance-box #balance {
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.expense-section .expense-box {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+    padding: 10px;
+    border: 1px solid #bdbbbb;
+}
+
+.expense-section .expense-box-item {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.expense-section .expense-box-item strong {
+   
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#primary-color{
+    color: #12cf12;
+}
+
+#secondary-color {
+    color: #db2108;
+}
+
+.expense-section .expense-box-item.profit span {
+    color: #12cf12;
+}
+
+.expense-section .expense-box-item.loss span {
+    color: #db2108;
+}
+
+.expense-section .operation-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.expense-section .operation-list .operation-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px solid #bdbbbb;
+    border-left: 5px solid transparent;
+}
+
+.expense-section .operation-item:hover .remove-btn {
+    display: inline-block;
+}
+
+.expense-section .operation-item.profit-box {
+    border-left-color: #12cf12;
+}
+
+.expense-section .operation-item.loss-box {
+    border-left-color: #db2108;
+}
+
+.expense-section .operation-item .remove-btn {
+    display: none;
+    position: absolute;
+    left: -13px;
+    top: 5px;
+    background-color: #f00b0b;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.expense-section .operation-form .operation-form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.expense-section .operation-form .operation-form-item label {
+    margin-bottom: 5px;
+}
+
+.expense-section .operation-form .operation-form-item input {
+    border: 1px solid #959494;
+    padding: 4px;
+}
+
+.expense-section .operation-form button {
+    background-color: #900590;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
